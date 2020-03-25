@@ -1,21 +1,6 @@
 # Terraform module
 Terraform module which creates
 
-## Terraform versions
-Terraform 0.12.
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Usage
-
-## Examples
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-
-
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
