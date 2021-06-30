@@ -1,4 +1,4 @@
-# name: CI
+# name: Terratest
 # on:
 #   schedule:
 #     - cron: "0 10 * * 6"
