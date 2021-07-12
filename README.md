@@ -1,6 +1,6 @@
 # Terraform module
-[![Terratest](https://github.com/austincloudguru/terraform-aws-/Terratest/badge.svg?event=push)](https://github.com/austincloudguru/terraform-aws-/actions?query=workflow%3ATerratest) 
-![Latest Version](https://img.shields.io/github/v/tag/austincloudguru/terraform-aws-nessus-appliance?sort=semver&label=Latest%20Version)
+[![Terratest](https://github.com/austincloudguru/terraform-aws-/workflows/Terratest/badge.svg?event=push)](https://github.com/austincloudguru/terraform-aws-/actions?query=workflow%3ATerratest) 
+![Latest Version](https://img.shields.io/github/v/tag/austincloudguru/terraform-aws-?sort=semver&label=Latest%20Version)
 [![License](https://img.shields.io/github/license/austincloudguru/terraform-aws-)](https://github.com/austincloudguru/terraform-aws-/blob/master/LICENSE)
 
 Terraform module which creates
