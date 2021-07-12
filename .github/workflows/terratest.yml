@@ -1,41 +1,41 @@
-# name: Terratest
-# on:
-#   schedule:
-#     - cron: "0 10 * * 6"
-#   pull_request:
-#     branches:
-#       - master
-#   push:
-#     paths-ignore:
-#       - '**/README.md'  
+name: Terratest
+on:
+  schedule:
+    - cron: "0 10 * * 6"
+  pull_request:
+    branches:
+      - master
+  push:
+    paths-ignore:
+      - '**/README.md'  
 
-# env:
-#   TERRAFORM_VERSION: 1.0.1
-#   GO_VERSION: 1.16
-#   AWS_REGION: "us-west-2" 
+env:
+  TERRAFORM_VERSION: 1.0.1
+  GO_VERSION: 1.16
+  AWS_REGION: "us-west-2" 
 
-# # Set to the repository name
-# concurrency: terraform-module-template
+# Set to the repository name
+concurrency: terraform-module-template
 
-# jobs:
-#   build:
-#     name: Test XXXXX Module
-#     runs-on: ubuntu-latest
+jobs:
+  build:
+    name: Test XXXXX Module
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Check out the codebase.
-#         uses: actions/checkout@v2
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
 
-#       - name: Setup Terraform  
-#         uses: hashicorp/setup-terraform@v1
-#         with:
-#           terraform_version: ${{ env.TERRAFORM_VERSIONS }}
-#           terraform_wrapper: false
+      - name: Setup Terraform  
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: ${{ env.TERRAFORM_VERSIONS }}
+          terraform_wrapper: false
       
-#       - name: Set up Go
-#         uses: actions/setup-go@v2
-#         with:
-#           go-version: ${{ env.GO_VERSION }}
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ env.GO_VERSION }}
 
 #       - name: Configure AWS Credentials
 #         uses: aws-actions/configure-aws-credentials@v1
